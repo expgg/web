@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Movie Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: #222;
+            color: white;
             text-align: center;
         }
         header {
-            background: #4CAF50;
-            color: white;
+            background: #ff6600;
             padding: 15px;
             font-size: 24px;
         }
-        main {
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             padding: 20px;
         }
-        footer {
+        .movie-card {
             background: #333;
-            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .movie-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #111;
             padding: 10px;
             position: fixed;
             width: 100%;
@@ -33,16 +45,56 @@
 <body>
 
 <header>
-    My Simple Website
+    Movie Website
 </header>
 
 <main>
-    <h1>Welcome!</h1>
-    <p>This is a basic website using only HTML and CSS.</p>
+    <div class="movies-container">
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 1">
+            <p>Movie 1</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 2">
+            <p>Movie 2</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 3">
+            <p>Movie 3</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 4">
+            <p>Movie 4</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 5">
+            <p>Movie 5</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 6">
+            <p>Movie 6</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 7">
+            <p>Movie 7</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 8">
+            <p>Movie 8</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 9">
+            <p>Movie 9</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200" alt="Movie 10">
+            <p>Movie 10</p>
+        </div>
+    </div>
 </main>
 
 <footer>
-    &copy; 2025 My Simple Website
+    &copy; 2025 Movie Website
 </footer>
 
 </body>
